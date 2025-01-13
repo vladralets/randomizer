@@ -1,0 +1,7 @@
+export {default as AdminPage} from './AdminPage'
+export {default as HomePage} from './HomePage'
+export {default as LoginPage} from './LoginPage'
+export {default as NotFoundPage} from './NotFoundPage'
+export {default as QuestionsPage} from './QuestionsPage'
+export {default as TasksPage} from './TasksPage'
+export {default as TestsPage} from './TestsPage'

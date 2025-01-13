@@ -1,0 +1,73 @@
+{
+    "html": {
+        "title": "HTML",
+        "questions": [
+            {
+                "question": "What does HTML stand for?",
+                "answer": ["Hyper Text Markup Language"]
+            },
+            {
+                "question": "Who is making the Web standards?",
+                "answer": ["The World Wide Web Consortium"]
+            }
+        ]
+    },
+    "css": {
+        "title": "CSS",
+        "questions": [
+            {
+                "question": "What does CSS stand for?",
+                "answer": ["Cascading Style Sheets"]
+            },
+            {
+                "question": "What is the correct HTML for referring to an external style sheet?",
+                "answer": ["<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">"]
+            },
+            {
+                "question": "Where in an HTML document is the correct place to refer to an external style sheet?",
+                "answer": ["In the <head> section", "In the <body> section"]
+            }
+        ]
+    },
+    "js": {
+        "title": "JavaScript",
+        "questions": [
+            {
+                "question": "Inside which HTML element do we put the JavaScript?",
+                "answer": ["<script>"]
+            },
+            {
+                "question": "What is the correct syntax for referring to an external script called \"xxx.js\"?",
+                "answer": ["<script src=\"xxx.js\">"]
+            },
+            {
+                "question": "What is the correct syntax for creating a new element using JavaScript?",
+                "answer": ["document.createElement(\"p\")"]
+            }
+        ]
+    },
+    "react": {
+        "title": "React",
+        "questions": [
+            {
+                "question": "What is React?",
+                "answer": ["A JavaScript library for building user interfaces"]
+            },
+            {
+                "question": "Who maintains React?",
+                "answer":[ "Facebook"]
+            },
+            {
+                "question": "What is useEffect?",
+                "answer": [
+                    "useEffect is a hook that allows you to perform side effects in function components.",
+                    {
+                        "code": "useEffect(() => {\n  document.title = `You clicked ${count} times`;\n});",
+                        "language": "javascript"
+                    },
+                    "It is similar to componentDidMount and componentDidUpdate in a class-based component."
+                ]
+            }
+        ]
+    }
+}

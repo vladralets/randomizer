@@ -1,0 +1,11 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  @apply min-h-screen bg-gradient-to-b from-[#1a1a1a] to-[#2b2b2b] text-white; 
+}
+
+.container {
+  @apply mx-auto w-[1536px] lg:w-[1024px] md:w-[768px] sm:w-[640px] px-4;
+}
