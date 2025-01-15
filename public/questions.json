@@ -1,49 +1,4 @@
 {
-  "html": {
-    "title": "HTML",
-    "topics": [
-      {
-        "title": "Basics",
-        "questions": [
-          {
-            "question": "What does HTML stand for?",
-            "answer": ["Hyper Text Markup Language"]
-          },
-          {
-            "question": "Who is making the Web standards?",
-            "answer": ["The World Wide Web Consortium"]
-          }
-        ]
-      }
-    ]
-  },
-  "css": {
-    "title": "CSS",
-    "topics": [
-      {
-        "title": "Basics",
-        "questions": [
-          {
-            "question": "What does CSS stand for?",
-            "answer": ["Cascading Style Sheets"]
-          },
-          {
-            "question": "What is the correct HTML for referring to an external style sheet?",
-            "answer": [
-              {
-                "code": "<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">",
-                "language": "html"
-              }
-            ]
-          },
-          {
-            "question": "Where in an HTML document is the correct place to refer to an external style sheet?",
-            "answer": ["In the <head> section", "In the <body> section"]
-          }
-        ]
-      }
-    ]
-  },
   "js": {
     "title": "JavaScript",
     "topics": [
