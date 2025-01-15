@@ -21,7 +21,12 @@
             },
             {
                 "question": "What is the correct HTML for referring to an external style sheet?",
-                "answer": ["<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">"]
+                "answer": [
+                    {
+                        "code": "<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">",
+                        "language": "html"
+                    }
+                ]
             },
             {
                 "question": "Where in an HTML document is the correct place to refer to an external style sheet?",
@@ -34,15 +39,107 @@
         "questions": [
             {
                 "question": "Inside which HTML element do we put the JavaScript?",
-                "answer": ["<script>"]
+                "answer": [
+                    {
+                        "code": "<script>",
+                        "language": "html"
+                    }
+                ]
             },
             {
                 "question": "What is the correct syntax for referring to an external script called \"xxx.js\"?",
-                "answer": ["<script src=\"xxx.js\">"]
+                "answer": [
+                    {
+                        "code": "<script src=\"xxx.js\">",
+                        "language": "html"
+                    }
+                ]
             },
             {
                 "question": "What is the correct syntax for creating a new element using JavaScript?",
-                "answer": ["document.createElement(\"p\")"]
+                "answer": [
+                    {
+                        "code": "document.createElement(\"p\")",
+                        "language": "javascript"
+                    }
+                ]
+            },
+            {
+                "question": "What is an object in JavaScript?",
+                "answer": ["A data structure that allows storing collections of properties as key-value pairs."]
+            },
+            {
+                "question": "How do you create an object using a literal?",
+                "answer": [
+                    {
+                        "code": "let user = {};",
+                        "language": "javascript"
+                    }
+                ]
+            },
+            {
+                "question": "How can you add a new property to an existing object?",
+                "answer": [
+                    {
+                        "code": "user.age = 30;",
+                        "language": "javascript"
+                    }
+                ]
+            },
+            {
+                "question": "How can you delete a property from an object?",
+                "answer": [
+                    {
+                        "code": "delete user.age;",
+                        "language": "javascript"
+                    }
+                ]
+            },
+            {
+                "question": "How can you check if a property exists in an object?",
+                "answer": [
+                    {
+                        "code": "'name' in user;",
+                        "language": "javascript"
+                    }
+                ]
+            },
+            {
+                "question": "How can you iterate over all properties of an object?",
+                "answer": [
+                    "It is possible to iterate over all properties of an object using the for..in loop.",
+                    "Key in the loop is the property name.",
+                    "The following code will output all properties of the object user:",
+                    {
+                        "code": "for (let key in user) {\n  console.log(key);\n}",
+                        "language": "javascript"
+                    }
+                ]
+            },
+            {
+                "question": "What will accessing a non-existent property of an object return?",
+                "answer": ["It will return undefined."]
+            },
+            {
+                "question": "What types of values can be stored in object properties?",
+                "answer": ["Any type of data including strings, numbers, functions, arrays, and other objects."]
+            },
+            {
+                "question": "What happens if you define two properties with the same name in an object?",
+                "answer": ["The last one will overwrite the previous one."]
+            },
+            {
+                "question": "Can you use variables as property names in objects?",
+                "answer": [
+                    {
+                        "code": "let key = 'name';\nlet user = { [key]: 'John' };",
+                        "language": "javascript"
+                    }
+                ]
+            },
+            {
+                "question": "What does the const declaration do for objects?",
+                "answer": ["It prevents reassigning the object, but properties of the object can still be modified."]
             }
         ]
     },
@@ -55,7 +152,7 @@
             },
             {
                 "question": "Who maintains React?",
-                "answer":[ "Facebook"]
+                "answer": ["Facebook"]
             },
             {
                 "question": "What is useEffect?",
