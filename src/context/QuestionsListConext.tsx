@@ -1,14 +1,14 @@
 import { createContext, useContext, useState } from "react";
 import { Question, Questions } from "../types/types";
 
-type AuthContextType = {
+type QuestionsListContextType = {
   questions: Questions | [];
   setQuestions: (questions: Questions | []) => void;
   activeQuestion: Question | null;
   setActiveQuestion: (question: Question) => void;
 };
 
-const QuestionsListContext = createContext<AuthContextType>({
+const QuestionsListContext = createContext<QuestionsListContextType>({
   questions: [],
   setQuestions: () => {},
   activeQuestion: null,

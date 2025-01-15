@@ -18,20 +18,18 @@ const QuestionsListLayout = () => {
         setQuestions(data);
       })
       .catch((error) => console.error("Error:", error));
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <div className="container flex justify-between gap-16 min-h-screen mt-4">
-      <div className="w-1/2">
+    <div className="container flex justify-between mt-4 gap-12 md:flex-col md:gap-4 md:px-4">
+      <div className="w-full">
         <AccordionList />
       </div>
-      <div className="w-1/2">
+      <div className="w-full md:w-1/2 lg:w-1/3">
         {activeQuestion && (
-          <div className="p-4 border border-coral rounded-md">
-            <p className="text-xl mb-10 text-orchid">
-              {activeQuestion.question}
-            </p>
+          <div className="p-4 border border-coral rounded-md sticky top-4">
+            <p className="text-xl mb-10 text-orchid">{activeQuestion.question}</p>
             <div className="space-y-6">
               {activeQuestion.answer.map((item, index) => {
                 if (typeof item === "string") {

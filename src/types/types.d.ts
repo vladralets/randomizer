@@ -6,9 +6,14 @@ export interface Question {
   })[];
 }
 
-export interface QuestionsCategory {
+export interface Topic {
   title: string;
   questions: Question[];
+}
+
+export interface QuestionsCategory {
+  title: string;
+  topics: Topic[];
 }
 
 export interface Questions {
