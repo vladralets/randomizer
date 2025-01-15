@@ -26,7 +26,7 @@ const QuestionsListLayout = () => {
       <div className="w-full">
         <AccordionList />
       </div>
-      <div className="w-full md:w-1/2 lg:w-1/3">
+      <div className="w-full">
         {activeQuestion && (
           <div className="p-4 border border-coral rounded-md sticky top-4">
             <p className="text-xl mb-10 text-orchid">{activeQuestion.question}</p>
